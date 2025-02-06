@@ -12,9 +12,6 @@ namespace Test_try_out
                 // Vraag om kleur
                 Console.WriteLine("Hoi, welke kleur wil je dat de console wordt? (groen/rood/anders)");
 
-                // Sla kleur op
-                string kleur = Console.ReadLine()?.ToLower();
-
                 if (kleur == "stop")
                 {
                     break;
@@ -52,13 +49,9 @@ namespace Test_try_out
                     Console.ForegroundColor = ConsoleColor.Magenta;
                 }
 
-                Console.WriteLine("/help" + kleur);  
 
                 //change werkt?
             }
-
         }
-       
     }
-
 }
