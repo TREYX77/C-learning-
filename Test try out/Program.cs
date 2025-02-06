@@ -12,6 +12,9 @@ namespace Test_try_out
                 // Vraag om kleur
                 Console.WriteLine("Hoi, welke kleur wil je dat de console wordt? (groen/rood/anders)");
 
+                // Sla kleur op
+                string kleur = Console.ReadLine()?.ToLower();
+
                 if (kleur == "stop")
                 {
                     break;
@@ -26,7 +29,7 @@ namespace Test_try_out
                 }
                 else if (kleur == "rood" || kleur == "red")
                 {
-                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.ForegroundColor = ConsoleColor.Red;
                 }
                 else if (kleur == "geel" || kleur == "yellow")
                 {
@@ -44,14 +47,46 @@ namespace Test_try_out
                 {
                     Console.ForegroundColor = ConsoleColor.Black;
                 }
-                else
+                else if (kleur == "grijs" || kleur == "gray")
+                {
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                }
+                else if (kleur == "oranje" || kleur == "orange")
+                {
+                    Console.ForegroundColor = ConsoleColor.DarkYellow;
+                }
+                else if (kleur == "cyaan" || kleur == "cyan" || kleur == "lichtblauw")
+                {
+                    Console.ForegroundColor = ConsoleColor.Cyan;
+                }
+                else if (kleur == "paars" || kleur == "purple" || kleur == "violet" || kleur == "magenta")
                 {
                     Console.ForegroundColor = ConsoleColor.Magenta;
                 }
 
 
+                Console.WriteLine("je console is nu: " + kleur);
+
                 //change werkt?
-            }
+
+
+            }   //  Console.WriteLine("Wil je de console resetten? (ja/nee)");
+                //  string reset = Console.ReadLine()?.ToLower();
+                //  if (reset == "ja")
+                //  {
+                //     Console.ResetColor();
+                //      Console.ReadLine();
+                //  }
+                //  else if (reset == "nee")
+                //  {
+                //      break;
+                //  }
+
+
         }
+
     }
+
 }
+
+
